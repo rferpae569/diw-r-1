@@ -1,0 +1,39 @@
+*{
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+}
+
+fieldset{
+    text-align: left;
+    border-radius: 10px;
+    width: 80%;
+}
+
+input[type="text"]{
+width: 20vw;
+margin: 3px;
+padding: 3px;
+border: 8px groove #ccc;
+background-color: #ccc;
+}
+
+input[type="submit"] {
+margin: auto;
+display: block;
+width: 80%;
+padding: 12px;
+box-shadow:  2px 2px gray;
+background-color: rgb(189, 189, 174);    
+}
+
+label{
+
+width: 15vw;
+display: inline-block;
+text-align: left;
+}
+
+form{
+width: 50vw;
+text-align: center;
+}

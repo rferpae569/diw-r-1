@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <link rel="stylesheet" href="Ejercicio2.css">
+</head>
+<body>
+    <div>
+    <form>
+        <label for="nombre">Nombre</label>
+        
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" pattern="[a-zA-ZnÑ]{1,}">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Apellido1 Apellido2" pattern="[a-zA-ZñÑ]{1,}[ ][a-zA-ZnÑ]{1,}">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+        <label for="provincias">Provincia</label>
+        <input type="text" id="provincia" name="provincia" placeholder="Introduce una provincia" list="provincias">
+    
+        <datalist id="provincias">
+            <option value="Cadiz">
+            <option value="Sevilla">
+            <option value="Huelva">
+        </datalist>
+
+        <fieldset>
+            <legend>Sistema operativo que mas utilices</legend>
+            Linux<input type="radio" name="sistema" id="Linux" value="Linux">
+            Windows<input type="radio" name="sistema" id="Windows" value="Windows">
+            MAC OS X<input type="radio" name="sistema" id="mac" value="mac">
+        </fieldset>
+
+        <input type="submit" id="enviar" name="enviar" value="enviar">
+    </form>
+    </div>
+</body>
+</html>
